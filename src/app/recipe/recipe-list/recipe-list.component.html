@@ -1,0 +1,17 @@
+<div class="row">
+    <div class="col-md-12">
+        <button class="btn btn-success" routerLink="new">Add New Recipe</button>
+    </div>
+</div>
+<hr>
+<!-- <div *ngIf="isLoading">
+    <app-spinner></app-spinner>
+</div> -->
+<div class="row">
+    <div class="col-md-12">
+        <app-recipe-item 
+        *ngFor="let recipe of recipes;let i=index"
+        [recipe] = "recipe"
+        [index] = "i"></app-recipe-item>
+    </div>
+</div>
